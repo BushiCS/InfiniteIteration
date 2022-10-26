@@ -28,12 +28,12 @@ public class Randoms implements Iterable<Integer> {
         @Override
         public boolean hasNext() {
             itNumber = random.nextInt(diff + 1);
-            return itNumber < max;
+            return true;
         }
 
         @Override
         public Integer next() {
-            return itNumber += min;
+            return itNumber + min;
         }
     }
 }
