@@ -6,14 +6,11 @@ import java.util.Random;
 public class Randoms implements Iterable<Integer> {
     protected Random random;
     private final int min;
-    private final int max;
-
     private final int diff;
     private int itNumber;
 
     public Randoms(int min, int max) {
         this.min = min;
-        this.max = max;
         diff = max - min;
         random = new Random();
     }
